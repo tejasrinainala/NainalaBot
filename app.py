@@ -9,6 +9,11 @@ load_dotenv()
 # Create Gemini client
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
+# Create chat session (Gemini remembers conversation)
+chat = client.chats.create(
+    model="gemini-2.5-flash-lite"
+)
+
 print("🤖 Welcome Tejasri!")
 print("Type 'help' to see available commands.\n")
 
@@ -16,11 +21,13 @@ print("Type 'help' to see available commands.\n")
 user_messages = 0
 ai_requests = 0
 
+# Our own conversation history (for learning)
+history = []
+
 while True:
-    # Get user input
+
     question = input("You: ").strip()
 
-    # Ignore empty input
     if not question:
         print("⚠️ Please enter a message.\n")
         continue
@@ -35,7 +42,6 @@ while True:
         print("👋 Goodbye!")
         break
 
-    # Count every user message except exit
     user_messages += 1
 
     # Help
@@ -46,6 +52,7 @@ while True:
         print("hello - Greet the bot")
         print("time  - Show current time")
         print("clear - Clear the terminal")
+        print("history - Show stored conversation")
         print("exit  - Exit the chatbot\n")
         continue
 
@@ -62,20 +69,41 @@ while True:
 
     # Clear terminal
     elif command == "clear":
-        os.system("clear")      # macOS/Linux
-        # os.system("cls")       # Windows
+        os.system("clear")
         continue
 
-    # Ask Gemini
+    # Show history
+    elif command == "history":
+        print("\n📜 Conversation History")
+        print("----------------------------")
+
+        if not history:
+            print("No conversation yet.\n")
+        else:
+            for message in history:
+                print(f"{message['role'].capitalize()}: {message['content']}")
+
+        print()
+        continue
+
+    # Store user message
+    history.append({
+        "role": "user",
+        "content": question
+    })
+
     try:
-        response = client.models.generate_content(
-            model="gemini-2.5-flash-lite",
-            contents=question
-        )
+        response = chat.send_message(question)
 
         ai_requests += 1
 
         print(f"\n🤖 NainalaBot: {response.text}\n")
+
+        # Store AI response
+        history.append({
+            "role": "model",
+            "content": response.text
+        })
 
     except Exception as e:
         print("\n❌ Unable to contact Gemini.")
