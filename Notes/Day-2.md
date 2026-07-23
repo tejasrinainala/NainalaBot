@@ -204,10 +204,3 @@ Successfully built a chatbot capable of maintaining multi-turn conversations and
 
 ---
 
-# 📅 Next Day Goals (Day 3)
-
-- Learn Tokens
-- Understand Context Window
-- Build Conversation Memory Manually
-- Learn why long conversations become expensive
-- Compare manual memory with Gemini's built-in chat session
