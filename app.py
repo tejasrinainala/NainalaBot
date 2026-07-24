@@ -2,6 +2,7 @@ from google import genai
 from dotenv import load_dotenv
 from datetime import datetime
 import os
+import json
 
 # Load environment variables
 load_dotenv()
@@ -9,7 +10,7 @@ load_dotenv()
 # Create Gemini client
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Create chat session (Gemini remembers conversation)
+# Create chat session (Gemini remembers conversation during this session)
 chat = client.chats.create(
     model="gemini-2.5-flash-lite"
 )
@@ -17,12 +18,21 @@ chat = client.chats.create(
 print("🤖 Welcome Tejasri!")
 print("Type 'help' to see available commands.\n")
 
+# Load previous chat history if it exists
+if os.path.exists("chat_history.json"):
+    try:
+        with open("chat_history.json", "r") as file:
+            history = json.load(file)
+    except json.JSONDecodeError:
+        history = []
+else:
+    history = []
+    with open("chat_history.json", "w") as file:
+        json.dump(history, file, indent=4)
+
 # Counters
 user_messages = 0
 ai_requests = 0
-
-# Our own conversation history (for learning)
-history = []
 
 while True:
 
@@ -48,12 +58,12 @@ while True:
     if command == "help":
         print("\n📋 Available Commands")
         print("----------------------")
-        print("help  - Show available commands")
-        print("hello - Greet the bot")
-        print("time  - Show current time")
-        print("clear - Clear the terminal")
-        print("history - Show stored conversation")
-        print("exit  - Exit the chatbot\n")
+        print("help     - Show available commands")
+        print("hello    - Greet the bot")
+        print("time     - Show current time")
+        print("clear    - Clear the terminal")
+        print("history  - Show stored conversation")
+        print("exit     - Exit the chatbot\n")
         continue
 
     # Hello
@@ -69,7 +79,7 @@ while True:
 
     # Clear terminal
     elif command == "clear":
-        os.system("clear")
+        os.system("clear")  # Use "cls" for Windows
         continue
 
     # Show history
@@ -104,6 +114,10 @@ while True:
             "role": "model",
             "content": response.text
         })
+
+        # Save updated history
+        with open("chat_history.json", "w") as file:
+            json.dump(history, file, indent=4)
 
     except Exception as e:
         print("\n❌ Unable to contact Gemini.")

@@ -1,0 +1,90 @@
+[
+    {
+        "role": "user",
+        "content": "hi"
+    },
+    {
+        "role": "model",
+        "content": "Hi there! How can I help you today?"
+    },
+    {
+        "role": "user",
+        "content": "i am tejasri"
+    },
+    {
+        "role": "model",
+        "content": "Hi Tejasri! It's nice to meet you. What can I do for you?"
+    },
+    {
+        "role": "user",
+        "content": "how are you?"
+    },
+    {
+        "role": "model",
+        "content": "As a large language model, I don't have feelings or emotions in the way humans do. However, I am functioning well and ready to assist you!\n\nHow can I help you today, Tejasri?"
+    },
+    {
+        "role": "user",
+        "content": "i am 21"
+    },
+    {
+        "role": "model",
+        "content": "Thanks for letting me know, Tejasri!  That's a great age. Is there anything you'd like to talk about or ask related to that, or anything else on your mind?"
+    },
+    {
+        "role": "user",
+        "content": "exit()"
+    },
+    {
+        "role": "model",
+        "content": "Okay, Tejasri. If you're ready to end our conversation, I understand.\n\nIs there anything else I can help you with before I go? If not, I'll be here if you need me later."
+    },
+    {
+        "role": "user",
+        "content": "no bye"
+    },
+    {
+        "role": "model",
+        "content": "Alright, Tejasri. Goodbye! It was nice chatting with you."
+    },
+    {
+        "role": "user",
+        "content": "exit()"
+    },
+    {
+        "role": "model",
+        "content": "Okay, Tejasri. If you're ready to end our conversation, I understand.\n\nIs there anything else I can help you with before I go? If not, I'll be here if you need me later."
+    },
+    {
+        "role": "user",
+        "content": "what is my name"
+    },
+    {
+        "role": "model",
+        "content": "I do not have access to your personal information, so I cannot tell you your name. I am a large language model, trained by Google."
+    },
+    {
+        "role": "user",
+        "content": "i am tejasri"
+    },
+    {
+        "role": "model",
+        "content": "Hello Tejasri! It's nice to meet you. How can I help you today?"
+    },
+    {
+        "role": "user",
+        "content": "what is my name?"
+    },
+    {
+        "role": "model",
+        "content": "You've told me your name is **Tejasri**."
+    },
+    {
+        "role": "user",
+        "content": "cool"
+    },
+    {
+        "role": "model",
+        "content": "Great! Glad you think so. \ud83d\ude0a\n\nIs there anything else I can help you with today, Tejasri?"
+    }
+]
