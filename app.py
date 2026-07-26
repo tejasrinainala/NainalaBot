@@ -101,9 +101,12 @@ while True:
         "role": "user",
         "content": question
     })
-
+    context = ""
+    for message in history:
+        context += f"{message['role'].capitalize()}: {message['content']}"
+    big_prompt = f"previous conversation : {context} + current question : {question}"
     try:
-        response = chat.send_message(question)
+        response = chat.send_message(big_prompt)
 
         ai_requests += 1
 
