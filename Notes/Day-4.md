@@ -120,14 +120,6 @@ This implementation works well for learning but is not suitable for production-s
 
 ---
 
-## 🚀 Next Step (Day 5)
-
-- Send only recent conversations instead of the complete history
-- Optimize prompt size
-- Improve chatbot performance
-- Learn how production AI assistants manage long conversations
-
----
 
 ## 🎉 Outcome
 
