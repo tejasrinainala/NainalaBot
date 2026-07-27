@@ -190,5 +190,77 @@
     {
         "role": "model",
         "content": "You live in **Ongole**.\n\nYou mentioned that **Alluraiah sweets** are famous there!"
+    },
+    {
+        "role": "user",
+        "content": "what is my name?"
+    },
+    {
+        "role": "model",
+        "content": "You've told me your name is **Tejasri**."
+    },
+    {
+        "role": "user",
+        "content": "what is my age?"
+    },
+    {
+        "role": "model",
+        "content": "You've told me you are **21** years old."
+    },
+    {
+        "role": "user",
+        "content": "where do i live?"
+    },
+    {
+        "role": "model",
+        "content": "You live in **Ongole**."
+    },
+    {
+        "role": "user",
+        "content": "what is famous in ongole?"
+    },
+    {
+        "role": "model",
+        "content": "You mentioned that **Alluraiah sweets** are famous in Ongole!"
+    },
+    {
+        "role": "user",
+        "content": "nicee!"
+    },
+    {
+        "role": "model",
+        "content": "That's great to hear, Tejasri! Is there anything else I can help you with today?"
+    },
+    {
+        "role": "user",
+        "content": "what is my name"
+    },
+    {
+        "role": "model",
+        "content": "You've told me your name is **Tejasri**."
+    },
+    {
+        "role": "user",
+        "content": "exit"
+    },
+    {
+        "role": "model",
+        "content": "Goodbye, Tejasri! It was nice chatting with you."
+    },
+    {
+        "role": "user",
+        "content": "exit"
+    },
+    {
+        "role": "model",
+        "content": "Goodbye, Tejasri! It was nice chatting with you."
+    },
+    {
+        "role": "user",
+        "content": "exit"
+    },
+    {
+        "role": "model",
+        "content": "Model: Goodbye, Tejasri! It was nice chatting with you."
     }
 ]

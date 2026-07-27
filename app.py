@@ -10,7 +10,7 @@ load_dotenv()
 # Create Gemini client
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Create chat session (Gemini remembers conversation during this session)
+# Create chat session
 chat = client.chats.create(
     model="gemini-2.5-flash-lite"
 )
@@ -30,6 +30,9 @@ else:
     with open("chat_history.json", "w") as file:
         json.dump(history, file, indent=4)
 
+# Configuration
+MAX_HISTORY = 20
+
 # Counters
 user_messages = 0
 ai_requests = 0
@@ -43,9 +46,17 @@ while True:
         continue
 
     command = question.lower()
-
+    EXIT_COMMANDS = {
+    "exit",
+    "quit",
+    "bye",
+    "goodbye",
+    "stop",
+    "see you",
+    "exit()"
+    }
     # Exit
-    if command == "exit":
+    if command in EXIT_COMMANDS:
         print("\n📊 Session Summary")
         print(f"Total Messages : {user_messages}")
         print(f"AI Requests    : {ai_requests}")
@@ -101,10 +112,20 @@ while True:
         "role": "user",
         "content": question
     })
+
+    # Build context from only the last MAX_HISTORY messages
     context = ""
-    for message in history:
-        context += f"{message['role'].capitalize()}: {message['content']}"
-    big_prompt = f"previous conversation : {context} + current question : {question}"
+
+    for message in history[-MAX_HISTORY:]:
+        context += f"{message['role'].capitalize()}: {message['content']}\n"
+
+    big_prompt = (
+        f"Previous Conversation:\n"
+        f"{context}\n"
+        f"Current Question:\n"
+        f"{question}"
+    )
+
     try:
         response = chat.send_message(big_prompt)
 
