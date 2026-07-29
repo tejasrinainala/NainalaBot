@@ -1,4 +1,4 @@
-# Day 2 - Conversation Memory in NainalaBot
+# Day 2 - Conversation Memory in NovaMind
 
 ## 📅 Date
 23 July 2026
