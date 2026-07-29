@@ -1,4 +1,4 @@
-# Day 1 – Building My First AI Chatbot (NainalaBot)
+# Day 1 – Building My First AI Chatbot (NovaMind)
 
 ## 🎯 Goal
 
