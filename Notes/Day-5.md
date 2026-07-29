@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-Day 5 focuses on optimizing conversation memory and improving the overall user experience of NainalaBot.
+Day 5 focuses on optimizing conversation memory and improving the overall user experience of NovaMind.
 
 Instead of sending the entire chat history to Gemini, the chatbot now sends only the most recent conversations, reducing unnecessary token usage and improving performance.
 
