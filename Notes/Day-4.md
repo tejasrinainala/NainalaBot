@@ -2,7 +2,7 @@
 
 ## 🎯 Goal
 
-Enable NainalaBot to remember previous conversations even after the application is restarted.
+Enable NovaMind to remember previous conversations even after the application is restarted.
 
 ---
 
