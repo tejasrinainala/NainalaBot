@@ -1,11 +1,7 @@
 [
     {
-        "role": "user",
-        "content": "hi"
-    },
-    {
         "role": "model",
-        "content": "Hi there! How can I help you today?"
+        "content": "Model: Goodbye, Tejasri! It was nice chatting with you."
     },
     {
         "role": "user",
@@ -13,15 +9,7 @@
     },
     {
         "role": "model",
-        "content": "Hi Tejasri! It's nice to meet you. What can I do for you?"
-    },
-    {
-        "role": "user",
-        "content": "how are you?"
-    },
-    {
-        "role": "model",
-        "content": "As a large language model, I don't have feelings or emotions in the way humans do. However, I am functioning well and ready to assist you!\n\nHow can I help you today, Tejasri?"
+        "content": "You've told me your name is **Tejasri**."
     },
     {
         "role": "user",
@@ -29,187 +17,11 @@
     },
     {
         "role": "model",
-        "content": "Thanks for letting me know, Tejasri!  That's a great age. Is there anything you'd like to talk about or ask related to that, or anything else on your mind?"
-    },
-    {
-        "role": "user",
-        "content": "exit()"
-    },
-    {
-        "role": "model",
-        "content": "Okay, Tejasri. If you're ready to end our conversation, I understand.\n\nIs there anything else I can help you with before I go? If not, I'll be here if you need me later."
-    },
-    {
-        "role": "user",
-        "content": "no bye"
-    },
-    {
-        "role": "model",
-        "content": "Alright, Tejasri. Goodbye! It was nice chatting with you."
-    },
-    {
-        "role": "user",
-        "content": "exit()"
-    },
-    {
-        "role": "model",
-        "content": "Okay, Tejasri. If you're ready to end our conversation, I understand.\n\nIs there anything else I can help you with before I go? If not, I'll be here if you need me later."
-    },
-    {
-        "role": "user",
-        "content": "what is my name"
-    },
-    {
-        "role": "model",
-        "content": "I do not have access to your personal information, so I cannot tell you your name. I am a large language model, trained by Google."
-    },
-    {
-        "role": "user",
-        "content": "i am tejasri"
-    },
-    {
-        "role": "model",
-        "content": "Hello Tejasri! It's nice to meet you. How can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "what is my name?"
-    },
-    {
-        "role": "model",
-        "content": "You've told me your name is **Tejasri**."
-    },
-    {
-        "role": "user",
-        "content": "cool"
-    },
-    {
-        "role": "model",
-        "content": "Great! Glad you think so. \ud83d\ude0a\n\nIs there anything else I can help you with today, Tejasri?"
-    },
-    {
-        "role": "user",
-        "content": "hi"
-    },
-    {
-        "role": "model",
-        "content": "Hi Tejasri! How can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "hello how are you?"
-    },
-    {
-        "role": "model",
-        "content": "Hello Tejasri! As a large language model, I don't have feelings or emotions in the way humans do. However, I am functioning well and ready to assist you!\n\nHow can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "i am tejasri"
-    },
-    {
-        "role": "model",
-        "content": "Hello Tejasri! It's nice to meet you again. How can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "i am 21"
-    },
-    {
-        "role": "model",
-        "content": "Thanks for letting me know, Tejasri! That's a great age. Is there anything you'd like to talk about or ask related to that, or anything else on your mind?"
-    },
-    {
-        "role": "user",
-        "content": "hi"
-    },
-    {
-        "role": "model",
-        "content": "Hi Tejasri! How can I help you today?"
-    },
-    {
-        "role": "user",
-        "content": "what is my name?"
-    },
-    {
-        "role": "model",
-        "content": "You've told me your name is **Tejasri**."
-    },
-    {
-        "role": "user",
-        "content": "'how old am i ?"
-    },
-    {
-        "role": "model",
         "content": "You've told me you are **21** years old."
     },
     {
         "role": "user",
-        "content": "goood and my surname is nainala"
-    },
-    {
-        "role": "model",
-        "content": "Great! Thanks for letting me know your surname is **Nainala**, Tejasri.\n\nIs there anything else you'd like to tell me or ask about?"
-    },
-    {
-        "role": "user",
-        "content": "wht is my surname?"
-    },
-    {
-        "role": "model",
-        "content": "You've told me your surname is **Nainala**."
-    },
-    {
-        "role": "user",
-        "content": "bye!"
-    },
-    {
-        "role": "model",
-        "content": "Goodbye, Tejasri! It was nice chatting with you."
-    },
-    {
-        "role": "user",
-        "content": "yeah!! i live in ongole"
-    },
-    {
-        "role": "model",
-        "content": "That's great, Tejasri! Ongole is a city in the state of Andhra Pradesh, India. Is there anything specific you'd like to know or talk about regarding Ongole?"
-    },
-    {
-        "role": "user",
-        "content": "alluraiah sweets are famous in ongole"
-    },
-    {
-        "role": "model",
-        "content": "That's interesting! I'll make a note of that. Are you looking for information about Alluraiah sweets, or would you like to know more about what makes them famous in Ongole?"
-    },
-    {
-        "role": "user",
-        "content": "where do i live and what are famous in the place i live?"
-    },
-    {
-        "role": "model",
-        "content": "You live in **Ongole**.\n\nYou mentioned that **Alluraiah sweets** are famous there!"
-    },
-    {
-        "role": "user",
-        "content": "what is my name?"
-    },
-    {
-        "role": "model",
-        "content": "You've told me your name is **Tejasri**."
-    },
-    {
-        "role": "user",
-        "content": "what is my age?"
-    },
-    {
-        "role": "model",
-        "content": "You've told me you are **21** years old."
-    },
-    {
-        "role": "user",
-        "content": "where do i live?"
+        "content": "where do i live"
     },
     {
         "role": "model",
@@ -217,50 +29,78 @@
     },
     {
         "role": "user",
-        "content": "what is famous in ongole?"
+        "content": "i completed btech"
     },
     {
         "role": "model",
-        "content": "You mentioned that **Alluraiah sweets** are famous in Ongole!"
+        "content": "Okay, Tejasri! Good to know you completed your BTech. Is there anything else you'd like to tell me or ask me?"
     },
     {
         "role": "user",
-        "content": "nicee!"
+        "content": "my surname is nainala"
     },
     {
         "role": "model",
-        "content": "That's great to hear, Tejasri! Is there anything else I can help you with today?"
+        "content": "Long-Term Memory:\n{\n  \"name\": \"Tejasri\",\n  \"current_city\": \"Ongole\",\n  \"city_history\": [],\n  \"education\": \"BTech\",\n  \"occupation\": \"\",\n  \"preferences\": [],\n  \"personal_facts\": [\n    \"21 years old\"\n  ]\n}\n\nYour surname is **Nainala**."
     },
     {
         "role": "user",
-        "content": "what is my name"
+        "content": "what is my surname"
     },
     {
         "role": "model",
-        "content": "You've told me your name is **Tejasri**."
+        "content": "You've told me your surname is **Nainala**."
     },
     {
         "role": "user",
-        "content": "exit"
-    },
-    {
-        "role": "model",
-        "content": "Goodbye, Tejasri! It was nice chatting with you."
+        "content": "i studied in qis high school untill 10th class"
     },
     {
         "role": "user",
-        "content": "exit"
+        "content": "i studied in qis high school untill 10th class"
     },
     {
         "role": "model",
-        "content": "Goodbye, Tejasri! It was nice chatting with you."
+        "content": "Long-Term Memory:\n{\n  \"name\": \"Tejasri\",\n  \"current_city\": \"Ongole\",\n  \"city_history\": [],\n  \"education\": \"BTech\",\n  \"occupation\": \"\",\n  \"preferences\": [],\n  \"personal_facts\": [\n    \"21 years old\"\n  ],\n  \"school_history\": [\n    \"QIS High School until 10th class\"\n  ]\n}\n\nYour education history has been updated to include that you studied in **QIS High School until 10th class**."
     },
     {
         "role": "user",
-        "content": "exit"
+        "content": "where did i study"
     },
     {
         "role": "model",
-        "content": "Model: Goodbye, Tejasri! It was nice chatting with you."
+        "content": "You studied in **QIS High School until 10th class**."
+    },
+    {
+        "role": "user",
+        "content": "good"
+    },
+    {
+        "role": "model",
+        "content": "It's good to hear that! Is there anything else I can help you with today?"
+    },
+    {
+        "role": "user",
+        "content": "ok"
+    },
+    {
+        "role": "model",
+        "content": "Okay, Tejasri! Is there anything else you'd like to tell me or ask me?"
+    },
+    {
+        "role": "user",
+        "content": "what is your name"
+    },
+    {
+        "role": "model",
+        "content": "I am NovaMind, an intelligent AI assistant."
+    },
+    {
+        "role": "user",
+        "content": "ok"
+    },
+    {
+        "role": "model",
+        "content": "Okay, Tejasri! Is there anything else I can help you with today?"
     }
 ]
